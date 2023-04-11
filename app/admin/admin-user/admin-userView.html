@@ -1,0 +1,77 @@
+<div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+                <button class="btn btn-success" ng-click="$ctrl.onExportExcel()">Export Excel</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-warning" ng-click="$ctrl.onExportPDF()">Export PDF</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-info" ng-click="$ctrl.onExportDoc()">Export Word</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="panel-group">
+    <div class="">
+        <table datatable="ng" class="table table-bordered table-striped"export-table>
+            <colgroup>
+                <col width="5%" />
+                <col width="15%" />
+                <col width="15%" />
+                <col width="10%" />
+                <col width="25%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="5%" />
+            </colgroup>
+          <thead>
+          <tr>
+              <th>Number</th>
+              <th>Email</th>
+              <th>Name</th>
+              <th>Phone Number</th>
+              <th>Address</th>
+              <th>Picture</th>
+              <th>Level</th>
+              <th>Delete</th>
+          </tr>
+          </thead>
+          <tbody>
+                <tr ng-repeat = "user in $ctrl.userModels">
+                  <td>{{$index +1}}</td>
+                  <td>{{user.username}}</td>
+                  <td>{{user.name}}</td>
+                  <td>{{user.phone}}</td>
+                  <td>
+                    <p>{{user.address}}</p>
+                  </td>
+                  <td><img width="120px" src="{{user.img}}" alt=""></td>
+                  <td ><strong ng-style ="user.level ? 'color:red':''">{{user.role}}</strong></td>
+                  <td ng-hide = '{{user.level}}'> <a href="" ng-click="$ctrl.deleteUser(user)">
+                      <span class="fa fa-trash"> <span>Delete</span></span></a>
+                  </td>
+                </tr>
+          </tbody>
+          <tfoot>
+          <tr>
+            <th>Number</th>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Picture</th>
+            <th>Level</th>
+            <th>Delete</th>
+          </tr>
+          </tfoot>
+        </table>
+    </div>
+</div>

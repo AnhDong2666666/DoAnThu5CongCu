@@ -1,0 +1,80 @@
+<div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+                <button type="button" class="btn btn-primary" ng-click="$ctrl.addPost()">Add Posts</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-success" ng-click="$ctrl.onExportExcel()">Export Excel</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-warning" ng-click="$ctrl.onExportPDF()">Export PDF</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-info" ng-click="$ctrl.onExportDoc()">Export Word</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="panel-group">
+        <table datatable="ng" class="table table-bordered table-striped" export-table>
+            <colgroup>
+                <col width="5%" />
+                <col width="15%" />
+                <col width="25%" />
+                <col width="15%" />
+                <col width="10%" />
+                <col width="20%" />
+                <col width="10%" />
+                <col width="10%" />
+                
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Title</th>
+                    <th>Content</th>
+                    <th>Picture</th>
+                    <th>Status</th>
+                    <th>Comment</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="post in $ctrl.postModels">
+                    <td>{{$index +1}}</td>
+                    <td>{{post.title}}</td>
+                    <td>{{post.content}}</td>
+                    <td><img width="120px" src="{{post.img}}" alt=""></td>
+                    <td>{{post.statusPost}}</td>
+                    <td>{{post.comment.userId}}: {{post.comment.cmt_content}}</td>
+                    <td><a href="" ng-click="$ctrl.onEdit(post)"><span class="fa fa-edit">
+                       <span>Edit</span></span></a>
+                    </td>
+                    <td> <a href="" ng-click="$ctrl.deletePost(post)">
+                      <span class="fa fa-trash"> <span>Delete</span></span></a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Number</th>
+                    <th>Title</th>
+                    <th>Content</th>
+                    <th>Picture</th>
+                    <th>Status</th>
+                    <th>Comment</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</div>

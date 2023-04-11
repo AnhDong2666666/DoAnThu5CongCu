@@ -1,0 +1,85 @@
+<h4>YOUR SHOPPING CART CONTAINS: 3 PRODUCTS</h4>
+
+<div class="" id="nas">
+    <div class="panel with-nav-tabs panel-success">
+        <div class="panel-heading">
+            <ul class="nav nav-tabs">
+                <li class="active"><a ui-sref="home.equipments">My Menu</a></li>
+            </ul>
+        </div>
+
+        <div class="panel-body">
+            <div class="tab-content">
+                <div class="btn-group-tabs">
+                    <button type="button" class="btn btn-success btn-md "ng-click="show()"><span class="fa fa-plus-circle"></span> Delete</button>
+                </div>
+                <div class="tab-pane fade in active">
+                    <table id="example" class="display" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Equipmentype</th>
+                                <th>Equipment</th>
+                                <th>Currrent Location</th>
+                                <th>Owner</th>
+                                <th>Date Arrived</th>
+                                <th>Date Demob</th>
+                                <th>Note</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="contact in data">
+                                <td>
+                                    <p>{{$index+1}}</p>
+                                </td>
+                                <td>
+                                    <p>{{contact.equipment_type}}</p>
+                                </td>
+                                <td id={{contact.id}}>
+
+                                </td>
+                                <td>
+                                    <p title={{contact.location}}>{{contact.location}}</p>
+                                </td>
+                                <td>
+                                    <p title={{contact.owner}}>{{contact.owner}}</p>
+                                </td>
+                                <td>
+                                    <p title={{contact.date_mob}}>{{contact.date_mob}}</p>
+                                </td>
+                                <td>
+                                    <p title={{contact.date_demob}}>{{contact.date_demob}}</p>
+                                </td>
+                                <td>
+                                    <p title={{contact.note}}>{{contact.note}}</p>
+                                </td>
+                                <td class="text-center">
+                                    <a ui-sref="home.equipment({id: contact.id})">
+                                        <button class="btn btn-success ">
+                                            <span class="fa fa-info-circle"></span>
+                                        </button>
+                                    </a>
+                                    <button ng-click="deleteContact(contact.id)" class="btn btn-warning"><span class="fa fa-trash"></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>No</th>
+                                <th>Equipmentype</th>
+                                <th>Equipment</th>
+                                <th>Currrent Location</th>
+                                <th>Owner</th>
+                                <th>Date Arrived</th>
+                                <th>Date Demob</th>
+                                <th>Note</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
