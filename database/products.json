@@ -1,0 +1,345 @@
+[{
+  "_id": {
+    "$oid": "5ac3d0879ab17c944a91c785"
+  },
+  "name": "Iphone 14",
+  "price": 100,
+  "sale": 5,
+  "category_id": [
+    {
+      "$oid": "6428e752f477e24804e8525e"
+    }
+  ],
+  "img": "uploads/imgs/1680760010457_iphone 14.jpg",
+  "qty": 2,
+  "groupId": 1,
+  "supplier_id": [],
+  "qty_bought": 1,
+  "content": ""
+},{
+  "_id": {
+    "$oid": "5ac3d07f9ab17c944a91c782"
+  },
+  "name": "Samsung Z Flip 4",
+  "offer": "/assests/images/offer.png",
+  "img": "uploads/imgs/1680760171122_z flip4.jpeg",
+  "tag": "/assests/images/tag.png",
+  "amount": 1,
+  "calo": "10",
+  "note": "thuc pham  ngon sach bổ dưỡng",
+  "groupId": 1,
+  "category_id": [
+    {
+      "$oid": "642e5d304aff210980848292"
+    }
+  ],
+  "content": "",
+  "price": 120,
+  "qty": 12,
+  "sale": 12,
+  "supplier_id": []
+},{
+  "_id": {
+    "$oid": "5af6676d4ab796383805c4d9"
+  },
+  "offer": "/assests/images/offer.png",
+  "tag": "/assests/images/tag.png",
+  "amount": "12",
+  "groupId": 2,
+  "name": "Nokia C21",
+  "calo": "18",
+  "note": "san pham tang can",
+  "img": "uploads/imgs/1680760183838_nokira c21.jpg",
+  "create_date": {
+    "$date": "2018-05-12T04:02:53.854Z"
+  },
+  "__v": 0,
+  "category_id": [
+    {
+      "$oid": "642e5d454aff2109808482a7"
+    }
+  ],
+  "content": null,
+  "price": 100,
+  "qty": 10,
+  "sale": 12,
+  "supplier_id": []
+},{
+  "_id": {
+    "$oid": "5af6b410e7e4c03c240710a4"
+  },
+  "offer": "/assests/images/offer.png",
+  "tag": "/assests/images/tag.png",
+  "amount": "11",
+  "groupId": 2,
+  "name": "Samsung S23 Ultra",
+  "calo": "111",
+  "note": "san pham chat luong cao",
+  "img": "uploads/imgs/1680760196424_s23 ultra.jpg",
+  "create_date": {
+    "$date": "2018-05-12T09:29:52.726Z"
+  },
+  "__v": 0,
+  "category_id": [
+    {
+      "$oid": "642e5d304aff210980848292"
+    }
+  ],
+  "content": null,
+  "price": 190,
+  "qty": 12,
+  "sale": 12
+},{
+  "_id": {
+    "$oid": "5af6b42ae7e4c03c240710a5"
+  },
+  "offer": "/assests/images/offer.png",
+  "tag": "/assests/images/tag.png",
+  "amount": "11",
+  "groupId": 2,
+  "name": "Oppo Reno 3",
+  "calo": "111",
+  "note": "san pham chat luong cao",
+  "img": "uploads/imgs/1680760206974_reno3.jpg",
+  "create_date": {
+    "$date": "2018-05-12T09:30:18.612Z"
+  },
+  "__v": 0,
+  "category_id": [
+    {
+      "$oid": "642e5d3f4aff2109808482a0"
+    }
+  ],
+  "content": null,
+  "price": 150,
+  "qty": 12,
+  "sale": 12
+},{
+  "_id": {
+    "$oid": "5af7de1beba35662988b32f9"
+  },
+  "offer": "/assests/images/offer.png",
+  "tag": "/assests/images/tag.png",
+  "amount": "1",
+  "groupId": 2,
+  "name": "Xiaomi 11T",
+  "calo": "12",
+  "note": "San pham cho tre em",
+  "img": "uploads/imgs/1680760222574_xiaomi.jpg",
+  "create_date": {
+    "$date": "2018-05-13T06:41:31.585Z"
+  },
+  "__v": 0,
+  "category_id": [
+    {
+      "$oid": "642e5d394aff210980848299"
+    }
+  ],
+  "content": null,
+  "price": 120,
+  "qty": 21,
+  "sale": 21,
+  "supplier_id": []
+},{
+  "_id": {
+    "$oid": "5ac5ad36a707891aec646941"
+  },
+  "name": "Samsung A73",
+  "offer": "/assests/images/offer.png",
+  "img": "uploads/imgs/1680760324092_samsung a73.jpg",
+  "tag": "/assests/images/tag.png",
+  "amount": 1,
+  "groupId": 1,
+  "calo": "10",
+  "note": "thực phẩm sạch",
+  "category_id": [
+    {
+      "$oid": "642e5d304aff210980848292"
+    }
+  ],
+  "content": null,
+  "price": 140,
+  "qty": 12,
+  "sale": 12
+},{
+  "_id": {
+    "$oid": "5af7ddeeeba35662988b32f8"
+  },
+  "offer": "/assests/images/offer.png",
+  "tag": "/assests/images/tag.png",
+  "amount": "1",
+  "groupId": 2,
+  "name": "Huawei Nova 7i",
+  "note": "San pham cho tre em",
+  "calo": "10",
+  "img": "uploads/imgs/1680760400996_huawei-nova-7i.jpg",
+  "create_date": {
+    "$date": "2018-05-13T06:40:46.205Z"
+  },
+  "__v": 0,
+  "category_id": [
+    {
+      "$oid": "642e5e3e4aff210980848368"
+    }
+  ],
+  "content": null,
+  "price": 100,
+  "qty": 5,
+  "sale": 12,
+  "supplier_id": []
+},{
+  "_id": {
+    "$oid": "5ac5ad4aa707891aec646947"
+  },
+  "name": "Huawei P50",
+  "offer": "/assests/images/offer.png",
+  "img": "uploads/imgs/1680760485024_huawei-p50.jpg",
+  "tag": "/assests/images/tag.png",
+  "amount": 1,
+  "groupId": 1,
+  "calo": "10",
+  "note": "thực phẩm sạch",
+  "category_id": [
+    {
+      "$oid": "642e5e3e4aff210980848368"
+    }
+  ],
+  "content": null,
+  "price": 165,
+  "qty": 12,
+  "sale": 12
+},{
+  "_id": {
+    "$oid": "5af6667d989b9539a05de75f"
+  },
+  "amount": "12",
+  "groupId": 5,
+  "name": "Xiaomi 11T",
+  "calo": "14",
+  "note": "sfsfdfs",
+  "img": "uploads/imgs/1680760578954_Xiaomi-11T-Blue.jpg",
+  "create_date": {
+    "$date": "2018-05-12T03:58:53.954Z"
+  },
+  "__v": 0,
+  "offer": "/assests/images/offer.png",
+  "tag": "/assests/images/tag.png",
+  "category_id": [
+    {
+      "$oid": "642e5d394aff210980848299"
+    }
+  ],
+  "content": null,
+  "price": 160,
+  "qty": 12,
+  "sale": 12
+},{
+  "_id": {
+    "$oid": "5af7e1b9eba35662988b32fe"
+  },
+  "offer": "/assests/images/offer.png",
+  "tag": "/assests/images/tag.png",
+  "amount": "1",
+  "groupId": 1,
+  "name": "Iphone 13",
+  "calo": "23",
+  "note": "sản phảm chất lượng cao",
+  "img": "uploads/imgs/1680760731089_13 pro max.jpg",
+  "create_date": {
+    "$date": "2018-05-13T06:56:57.396Z"
+  },
+  "__v": 0,
+  "category_id": [
+    {
+      "$oid": "6428e971ee67680938020ea8"
+    }
+  ],
+  "content": "",
+  "price": 150,
+  "qty": 12,
+  "sale": 12,
+  "supplier_id": []
+},{
+  "_id": {
+    "$oid": "5e53a9eccc1d7f28dc4dd925"
+  },
+  "category_id": [
+    {
+      "$oid": "6428ea30ee67680938020f0f"
+    }
+  ],
+  "supplier_id": [],
+  "img": "uploads/imgs/1680760771385_12 promax.jpg",
+  "groupId": 1,
+  "name": "Iphone 12",
+  "price": 155,
+  "sale": 12,
+  "qty": 12,
+  "content": "",
+  "created_at": {
+    "$date": "2020-02-24T10:48:12.309Z"
+  },
+  "updated_at": {
+    "$date": "2020-02-24T10:48:12.309Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5e53b3aacc1d7f28dc4dd926"
+  },
+  "category_id": [],
+  "supplier_id": [],
+  "img": "/assests/images/iphoneX.png",
+  "groupId": 1,
+  "name": "test",
+  "price": 10,
+  "sale": 5,
+  "qty": 2,
+  "content": "ábds",
+  "created_at": {
+    "$date": "2020-02-24T11:29:46.858Z"
+  },
+  "updated_at": {
+    "$date": "2020-02-24T11:29:46.858Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5e53b3bfcc1d7f28dc4dd927"
+  },
+  "category_id": [],
+  "supplier_id": [],
+  "img": "/assests/images/iphoneX.png",
+  "groupId": 1,
+  "name": "12",
+  "price": 12,
+  "sale": 6,
+  "qty": 1,
+  "content": "abca",
+  "created_at": {
+    "$date": "2020-02-24T11:30:07.107Z"
+  },
+  "updated_at": {
+    "$date": "2020-02-24T11:30:07.107Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6428e59cf477e24804e851a5"
+  },
+  "category_id": [],
+  "img": "uploads/imgs/1582873184295_iphoneX.jpg",
+  "groupId": 1,
+  "name": "Xe Đạp Địa Hình",
+  "price": 1000000,
+  "qty": 5,
+  "content": "Bao xịn",
+  "created_at": {
+    "$date": "2023-04-02T02:17:00.477Z"
+  },
+  "updated_at": {
+    "$date": "2023-04-02T02:17:00.477Z"
+  },
+  "__v": 0,
+  "sale": 5
+}]

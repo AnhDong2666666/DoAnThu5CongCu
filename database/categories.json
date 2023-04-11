@@ -1,0 +1,145 @@
+[
+  {
+    "_id": {
+      "$oid": "6428e752f477e24804e8525e"
+    },
+    "page_id": 2,
+    "name": "Iphone 14 Series",
+    "description": "New 100%",
+    "created_at": {
+      "$date": "2023-04-02T02:24:18.719Z"
+    },
+    "updated_at": {
+      "$date": "2023-04-02T02:24:18.719Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6428e971ee67680938020ea8"
+    },
+    "page_id": 2,
+    "name": "Iphone 13 Series",
+    "description": "New 100%",
+    "created_at": {
+      "$date": "2023-04-02T02:33:21.193Z"
+    },
+    "updated_at": {
+      "$date": "2023-04-02T02:33:21.193Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6428ea30ee67680938020f0f"
+    },
+    "page_id": 2,
+    "name": "Iphone 12 Series",
+    "created_at": {
+      "$date": "2023-04-02T02:36:32.459Z"
+    },
+    "updated_at": {
+      "$date": "2023-04-02T02:36:32.459Z"
+    },
+    "__v": 0,
+    "description": "New 100%"
+  },
+  {
+    "_id": {
+      "$oid": "6428ea6fee67680938020f51"
+    },
+    "page_id": 2,
+    "name": "Iphone 11 Series",
+    "description": "New 100%",
+    "created_at": {
+      "$date": "2023-04-02T02:37:35.048Z"
+    },
+    "updated_at": {
+      "$date": "2023-04-02T02:37:35.048Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6428ea83ee67680938020f5a"
+    },
+    "page_id": 2,
+    "name": "Iphone X, Xr Series",
+    "description": "New 100%",
+    "created_at": {
+      "$date": "2023-04-02T02:37:55.091Z"
+    },
+    "updated_at": {
+      "$date": "2023-04-02T02:37:55.091Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642e5d304aff210980848292"
+    },
+    "page_id": 1,
+    "name": "Samsung Phone",
+    "created_at": {
+      "$date": "2023-04-06T05:48:32.793Z"
+    },
+    "updated_at": {
+      "$date": "2023-04-06T05:48:32.793Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642e5d394aff210980848299"
+    },
+    "page_id": 1,
+    "name": "Xiaomi Phone",
+    "created_at": {
+      "$date": "2023-04-06T05:48:41.587Z"
+    },
+    "updated_at": {
+      "$date": "2023-04-06T05:48:41.587Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642e5d3f4aff2109808482a0"
+    },
+    "page_id": 1,
+    "name": "Oppo Phone",
+    "created_at": {
+      "$date": "2023-04-06T05:48:47.209Z"
+    },
+    "updated_at": {
+      "$date": "2023-04-06T05:48:47.209Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642e5d454aff2109808482a7"
+    },
+    "page_id": 1,
+    "name": "Nokia Phone",
+    "created_at": {
+      "$date": "2023-04-06T05:48:53.957Z"
+    },
+    "updated_at": {
+      "$date": "2023-04-06T05:48:53.957Z"
+    },
+    "__v": 0
+  },{
+  "_id": {
+    "$oid": "642e5e3e4aff210980848368"
+  },
+  "page_id": 1,
+  "name": "Huawei Phone",
+  "created_at": {
+    "$date": "2023-04-06T05:53:02.738Z"
+  },
+  "updated_at": {
+    "$date": "2023-04-06T05:53:02.738Z"
+  },
+  "__v": 0
+}]

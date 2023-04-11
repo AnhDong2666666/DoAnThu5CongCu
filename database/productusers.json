@@ -1,0 +1,151 @@
+[{
+  "_id": {
+    "$oid": "5e96ffa2b750061a50e41f90"
+  },
+  "product": [
+    {
+      "category_id": [
+        "5e9433c3e2c75b26346587a6"
+      ],
+      "img": "uploads/imgs/1582872495347_iphoneX.jpg",
+      "groupId": 1,
+      "_id": "5e58b7afa152c21e903da16e",
+      "supplier_id": [],
+      "name": "iphoneX",
+      "price": 200,
+      "sale": 6,
+      "qty": "3",
+      "content": "test",
+      "created_at": "2020-02-28T06:48:15.357Z",
+      "updated_at": "2020-02-28T06:48:15.357Z",
+      "__v": 0,
+      "sum": 600,
+      "amount": "3"
+    },
+    {
+      "category_id": [
+        "5e9585eeda33cc277807dd4c"
+      ],
+      "img": "uploads/imgs/1582872515686_samsung.jpg",
+      "groupId": 1,
+      "_id": "5e58b7c3a152c21e903da16f",
+      "supplier_id": [],
+      "name": "samsung",
+      "price": 80,
+      "sale": 5,
+      "qty": "1",
+      "content": "samsung",
+      "created_at": "2020-02-28T06:48:35.694Z",
+      "updated_at": "2020-02-28T06:48:35.694Z",
+      "__v": 0,
+      "sum": 80,
+      "amount": "1"
+    }
+  ],
+  "idUser": {
+    "$oid": "5e9601401a11e842d0b18df6"
+  },
+  "username": "user@gmail.com",
+  "create_date": {
+    "$date": "2020-04-15T12:35:46.511Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5e9700360aafa337d8f85135"
+  },
+  "product": [
+    {
+      "category_id": [],
+      "img": "uploads/imgs/1582872532063_oppo.jpg",
+      "groupId": 1,
+      "_id": "5e58b7d4a152c21e903da170",
+      "supplier_id": [],
+      "name": "oppo",
+      "price": 50,
+      "sale": 5,
+      "qty": "3",
+      "content": "a",
+      "created_at": "2020-02-28T06:48:52.074Z",
+      "updated_at": "2020-02-28T06:48:52.074Z",
+      "__v": 0,
+      "sum": 150
+    },
+    {
+      "category_id": [
+        "5e9585eeda33cc277807dd4c"
+      ],
+      "img": "uploads/imgs/1582872515686_samsung.jpg",
+      "groupId": 1,
+      "_id": "5e58b7c3a152c21e903da16f",
+      "supplier_id": [],
+      "name": "samsung",
+      "price": 80,
+      "sale": 5,
+      "qty": "2",
+      "content": "samsung",
+      "created_at": "2020-02-28T06:48:35.694Z",
+      "updated_at": "2020-02-28T06:48:35.694Z",
+      "__v": 0,
+      "sum": 160
+    }
+  ],
+  "idUser": {
+    "$oid": "5e9601401a11e842d0b18df6"
+  },
+  "username": "user@gmail.com",
+  "create_date": {
+    "$date": "2020-04-15T12:38:14.790Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5e9700c349c17704d82e0bb8"
+  },
+  "product": [
+    {
+      "category_id": [],
+      "img": "uploads/imgs/1582872532063_oppo.jpg",
+      "groupId": 1,
+      "_id": "5e58b7d4a152c21e903da170",
+      "supplier_id": [],
+      "name": "oppo",
+      "price": 50,
+      "sale": 5,
+      "qty": "2",
+      "content": "a",
+      "created_at": "2020-02-28T06:48:52.074Z",
+      "updated_at": "2020-02-28T06:48:52.074Z",
+      "__v": 0,
+      "sum": 100,
+      "amount": "2"
+    },
+    {
+      "category_id": [
+        "5e9585eeda33cc277807dd4c"
+      ],
+      "img": "uploads/imgs/1582872515686_samsung.jpg",
+      "groupId": 1,
+      "_id": "5e58b7c3a152c21e903da16f",
+      "supplier_id": [],
+      "name": "samsung",
+      "price": 80,
+      "sale": 5,
+      "qty": "3",
+      "content": "samsung",
+      "created_at": "2020-02-28T06:48:35.694Z",
+      "updated_at": "2020-02-28T06:48:35.694Z",
+      "__v": 0,
+      "sum": 240,
+      "amount": "3"
+    }
+  ],
+  "idUser": {
+    "$oid": "5e9601401a11e842d0b18df6"
+  },
+  "username": "user@gmail.com",
+  "create_date": {
+    "$date": "2020-04-15T12:40:35.479Z"
+  },
+  "__v": 0
+}]
