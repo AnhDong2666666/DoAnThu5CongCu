@@ -1,0 +1,31 @@
+<div class="modal fade" ng-init="Modal.init()">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" ng-show="!Modal.categoryModel._id">ADD CATEGORY</h4>
+          <h4 class="modal-title" ng-show="Modal.categoryModel._id">EDIT CATEGORY</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Name : </label>
+            <input type="text" class="form-control" ng-model="Modal.categoryModel.name">
+          </div>
+          <div class="form-group">
+            <label>Description : </label>
+            <textarea class="form-control" rows="4" ng-model="Modal.categoryModel.description"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Page : </label>
+            <select ng-model="Modal.categoryModel.page_id"
+            class="form-control" ng-options="page.id as page.name for page in Modal.pages" >
+            </select>
+        </div>
+        <div class="modal-footer">
+          <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>
+          <button type="button" ng-click="Modal.addCategory()" class="btn btn-primary" data-dismiss="modal" ng-disabled="!Modal.categoryModel.name">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

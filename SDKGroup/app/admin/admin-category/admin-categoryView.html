@@ -1,0 +1,71 @@
+<div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+                <button type="button" class="btn btn-primary" ng-click="$ctrl.addCategory()">Add Categories</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-success" ng-click="$ctrl.onExportExcel()">Export Excel</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-warning" ng-click="$ctrl.onExportPDF()">Export PDF</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-info" ng-click="$ctrl.onExportDoc()">Export Word</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="panel-group">
+        <table datatable="ng" class="table table-bordered table-striped" export-table>
+            <colgroup>
+                <col width="10%" />
+                <col width="20%" />
+                <col width="30%" />
+                <col width="20%" />
+                <col width="10%" />
+                <col width="10%" />         
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Page</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="category in $ctrl.categoryModels">
+                    <td>{{$index +1}}</td>
+                    <td>{{category.name}}</td>
+                    <td>{{category.description}}</td>
+                    <td>{{category.page}}</td>
+                    <td><a href="" ng-click="$ctrl.onEdit(category)"><span class="fa fa-edit">
+                       <span>Edit</span></span></a>
+                    </td>
+                    <td> <a href="" ng-click="$ctrl.deleteCategory(category)">
+                      <span class="fa fa-trash"> <span>Delete</span></span></a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Number</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Page</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</div>

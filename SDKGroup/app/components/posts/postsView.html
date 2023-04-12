@@ -1,0 +1,45 @@
+<div class="tygh-content clearfix">
+  <div class="container ">
+
+      <div class="row">
+          <div class="span16 ">
+              <ul class="categories_parent ">
+                  <li class="header_active_parent">
+                      <a href="#">Tin tức</a>
+              </ul>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="span11 main-content-span10 view-news-page">
+              <aside class="top10_news">
+                  <ul>
+                      <li class="top1_news">
+                          <a href="home.post({id: data[0]._id})">
+                              <div class="top1_img"><img class="ty-pict   load_scroll  cm-image" data-src="{{data[0].img}}" alt="" title="" src="{{data[0].img}}" /></div>
+                              <h3>{{data[0].title}}</h3>
+                              <figure>
+                                {{data[0].title}}
+                              </figure>
+                          </a>
+                      </li>
+                      <li>
+                          <a class="top2_news" href="home.post({id: data[1]._id})">
+                              <div class="top2_img"><img class="ty-pict   load_scroll  cm-image" data-src="{{data[1].img}}" alt="" title="" src="{{data[1].img}}" /></div>
+                              <h3>{{data[1].title}}</h3></a>
+                      </li>
+                      <li><a class="top_list_news" href="" title="Galaxy Note 20 Plus rò rỉ thiết kế, viên pin nâng cấp đáng kể"><h3>Galaxy Note 20 Plus rò rỉ thiết kế, viên pin nâng cấp đáng kể</h3></a></li>
+                      <li><a class="top_list_news" href="" title="iPhone SE 2020 đạt điểm ấn tượng trên AnTuTu, vượt cả Xs và Xs Max"><h3>iPhone SE 2020 đạt điểm ấn tượng trên AnTuTu, vượt cả Xs và Xs Max</h3></a></li>
+                      <li><a class="top_list_news" href="h" title="Nên chọn iPhone 7 Plus hay Galaxy A71 khi cùng phân khúc hơn 8 triệu đồng?"><h3>Nên chọn iPhone 7 Plus hay Galaxy A71 khi cùng phân khúc hơn 8 triệu đồng?</h3></a></li>
+                  </ul>
+                  <div class="list-news-item" ng-repeat="dt in data">
+                      <a class="news-item-img" ui-sref="home.post({id: dt._id})" title="{{dt.data}}"><img height="140" width="250" class="ty-pict   load_scroll  cm-image" data-src="{{dt.img}}" alt="" title="" src="{{dt.img}}" /></a><a class="news-item-title" href="" title="{{dt.title}}">{{data.title}}</a>
+                      <div class="news-item-short">{{dt.title}}</div>
+                      <div class="timepost"><span>{{dt.created_at}}</span>/div>
+                  </div>
+              </aside>
+          </div>
+      </div>
+
+  </div>
+</div>

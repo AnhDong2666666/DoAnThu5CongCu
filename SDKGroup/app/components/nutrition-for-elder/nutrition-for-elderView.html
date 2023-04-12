@@ -1,0 +1,47 @@
+<div class="top-brands">
+    <div class="container">
+        <h3>Nutrition for baby</h3>
+        <!-- <div class="row">
+            <div class="w3l_banner_nav_right_banner3_btm">
+                <div class="col-md-3 w3l_banner_nav_right_banner3_btml" ng-repeat = "data in dataPost">
+                    <div class="view view-tenth">
+                        <img src="{{data.img}}" alt=" " class="img-responsive" style="height:150px"/></a>
+                        <div class="mask">
+                            <h4>Nutrition for baby</h4>
+                            <p>{{data.other}}</p>
+                        </div>
+                    </div>
+                    <h4>{{data.title}}</h4>
+                    <ol>
+                       {{data.note}}
+                    </ol>
+                </div>
+            </div>
+        </div> -->
+        <div>
+          <div ng-repeat='data in dataProduct' class="">
+            <div ng-class="{{$index+1}} % 2 == 0 ? 'col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asdfdfd agile_top_brands_grids': 'col-md-3 w3ls_w3l_banner_left agile_top_brands_grids'">
+              <div class="hover14 column">
+                <div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+                  <div class="tag"><img src="{{data.tag}}" alt=" " class="img-responsive"></div>
+                  <div class="agile_top_brand_left_grid1">
+                    <figure>
+                      <div class="snipcart-item block">
+                        <div class="snipcart-thumb">
+                          <a ui-sref=""><img src="{{data.img}}" alt=" " class="img-responsive" style="height:140px"/></a>
+                          <p>{{data.name}}</p>
+                          <h4>{{data.calo}} Calo</h4>
+                        </div>
+                        <div class="snipcart-details">
+                          <input type="button" value="ADD TO MENU" ng-click="addShop(data._id)" class="button" />
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

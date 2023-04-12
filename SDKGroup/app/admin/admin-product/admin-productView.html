@@ -1,0 +1,94 @@
+<div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+                <button type="button" class="btn btn-primary" ng-click="$ctrl.addProduct()">Add Products</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-success" ng-click="$ctrl.onExportExcel()">Export Excel</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-warning" ng-click="$ctrl.onExportPDF()">Export PDF</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-info" ng-click="$ctrl.onExportDoc()">Export Word</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="panel-group">
+        <table datatable="ng" class="table table-bordered table-striped" export-table>
+            <colgroup>
+                <col width="5%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="15%" />
+                <col width="7%" />
+                <col width="7%" />
+                <col width="7%" />
+                <col width="7%" />
+                
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Name</th>
+                    <th>Picture</th>
+                    <th>Categories</th>
+                    <th>Price</th>
+                    <th>Sale</th>
+                    <th>Content</th>
+                    <th>Qty</th>
+                    <th>Qty Bought</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in $ctrl.productModels">
+                    <td>{{$index +1}}</td>
+                    <td>{{product.name}}</td>
+                    <td><img width="120px" src="{{product.img}}" alt=""></td>
+                    <td>{{product.category.name}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.sale}}</td>
+                    <td>
+                        <p>{{product.content}}</p>
+                    </td>
+                    <td>{{product.qty}}</td>
+                    <td>{{product.qty_bought}}</td>
+                    <td><a href="" ng-click="$ctrl.onEdit(product)"><span class="fa fa-edit">
+                       <span>Edit</span></span></a>
+                    </td>
+                    <td> <a href="" ng-click="$ctrl.deleteProduct(product)">
+                      <span class="fa fa-trash"> <span>Delete</span></span></a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Number</th>
+                    <th>Name</th>
+                    <th>Picture</th>
+                    <th>Categories</th>
+                    <th>Price</th>
+                    <th>Sale</th>
+                    <th>Content</th>
+                    <th>Qty</th>
+                    <th>Qty Bought</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</div>
