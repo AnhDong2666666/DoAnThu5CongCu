@@ -1,0 +1,21 @@
+<div class="modal fade" ng-init="Modal.init()">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" ng-show="Modal.productModel._id">EDIT ORDER</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Status: </label>
+          <select ng-model="Modal.productUserModel.status"
+          class="form-control" ng-options="status as status.name for status in Modal.statusP" >
+          </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="button" ng-click="Modal.editProductUser()" class="btn btn-primary" data-dismiss="modal" ng-disabled="">Save</button>
+      </div>
+    </div>
+  </div>
+</div>

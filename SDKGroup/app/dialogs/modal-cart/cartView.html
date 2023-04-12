@@ -1,0 +1,56 @@
+<div class="modal fade" ng-init="Modal.init()">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" ng-show="!Modal.getUserStatus">Giỏ hàng</h4>
+        <h4 class="modal-title" ng-show="Modal.getUserStatus">Giỏ hàng </h4>
+      </div>
+      <div class="modal-body">
+        <table class="display nowrap table table-hover table-striped table-bordered full-color-table full-info-table hover-table">
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Tên</th>
+              <th>Giá</th>
+              <th>Số lượng</th>
+              <th>Hình ảnh</th>
+              <th>Tổng giá</th>
+              <th>Xóa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="data in Modal.data">
+              <td>{{$index+1}}</td>
+              <td>{{data.name}}</td>
+              <td>{{data.price}}000đ</td>
+              <td><input type="text" size="1" ng-model="data.amount" ng-change="Modal.myChange(data)"> </td>
+              <td><img width="60" src="../{{data.img}}" alt=""></td>
+              <td>{{data.sum}}000đ</td>
+              <td><img src="../../../assests/images/remove.png" ng-click="Modal.delProduct(data._id)"
+                 class="pointer"style="cursor: pointer">
+              </td>
+            </tr>
+            <tr>
+              <th>STT</th>
+              <th>Tên</th>
+              <th>Giá</th>
+              <th>Số lượng</th>
+              <th>Hình ảnh</th>
+              <th>Tổng giá</th>
+              <th>Xóa</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <div style="float:left">
+           <strong>Tổng giá : {{Modal.data | sumPro:'sum'}}000đ</strong>
+
+        </div>
+        <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">Hủy</button>
+        <button type="button" ng-click="Modal.saveProducUser()" class="btn btn-primary" data-dismiss="modal" ng-disabled="!Modal.data.length || Modal.data.sum == 0">Đặt hàng</button>
+      </div>
+    </div>
+  </div>
+</div>

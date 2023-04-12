@@ -1,0 +1,124 @@
+
+
+
+
+
+ <!-- Google Tag Manager (noscript) -->
+ <noscript><iframesrc="https://www.googletagmanager.com/ns.html?id=GTM-KJP7SNP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="tygh  " id="tygh_container">
+<div id="ajax_overlay" class="ajax-overlay"></div>
+<div id="ajax_loading_box" class="ajax-loading-box"></div>
+<div class="cm-notification-container notification-container"></div>
+<div class="helper-container" id="tygh_main_container">
+  <div class="tygh-header clearfix" ng-init="headerbarCtrl.init()">
+     <div class="container header-grid">
+        <div class="row">
+           <div class="span16 search-block-grid cart-content-grid" >
+              <div class=" top-logo float-left">
+                 <div class="logo-container">
+                    <a ui-sref="home.index">
+                        <img src="/assests/images/logo.png" style="width:70px; height:51px;" alt="Mobile" class="logo">
+                    </a>
+                 </div>
+              </div>
+              <div class=" top-search-block-grid">
+                 <div class="search-block">
+                    <div class="search-autocomplete"></div>
+                    <form action="" name="search_form" method="get">
+                       <input type="hidden" name="dispatch" value="products.search">
+                       <input type="text" name="Product" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Tìm kiếm';}" required=""/><button title="Search" class="search-magnifier" type="submit"><i class="icon-search"></i></button>
+                    </form>
+                 </div>
+                 <!-- Inline script moved to the bottom of the page -->
+              </div>
+              <ul id="vmenu_183" class="navbar ldesign-horizontal-menu">
+                 <li class="horizontal-menu-item menu-li-first  icon-top-menu-dien-thoai" data-submenu-id="nav_cart_561">
+                    <a ui-sref="home.phone" class="title_list_item">
+                    Điện thoại
+                    </a>
+                 </li>
+                 <li class="horizontal-menu-item   icon-top-menu-apple" data-submenu-id="nav_cart_562">
+                    <a  ui-sref="home.iphone" class="title_list_item">
+                    iPhone
+                    </a>
+                 </li>
+                 <li class="horizontal-menu-item   icon-top-menu-tablet" data-submenu-id="nav_cart_563">
+                    <a  ui-sref="home.tablet" class="title_list_item">
+                    Tablet
+                    </a>
+                 </li>
+                 <li class="horizontal-menu-item   icon-top-menu-watch" data-submenu-id="nav_cart_587">
+                    <a  ui-sref="home.watch" class="title_list_item">
+                    Watch
+                    </a>
+                 </li>
+                 <li class="horizontal-menu-item  menu-li-last icon-top-menu-thongtin" data-submenu-id="nav_cart_591">
+                    <a ui-sref="home.posts" class="title_list_item">
+                    CÔNG NGHỆ
+                    </a>
+                 </li>
+              </ul>
+              <style>
+                 li.horizontal-menu-item {
+                 display: inline-block;
+                 padding: 0;
+                 }
+                 .ldesign-horizontal-menu {
+                 float: left;
+                 background: #fff;
+                 }
+                 li.horizontal-menu-item a.title_list_item {
+                 color: #000;
+                 padding: 7px 8px;
+                 display: block;
+                 position: relative;
+                 text-transform: uppercase;
+                 font-size: 12px;
+                 opacity: .9;
+                 height: 59px;
+                 }
+                 li.horizontal-menu-item:hover a.title_list_item {
+                 background: #ED1C24 !important;
+                 color: #fff;
+                 }
+              </style>
+              <div class=" top-cart-content">
+                 <div class="dropdown-box" id="cart_status_135">
+                    <a href="" ng-click="headerbarCtrl.showModal()" id="sw_dropdown_135" class="popup-title cm-combination top-icon-cart empty">
+                    <i class="icon-basket"></i>
+                    <span class="minicart-title">
+                    <span class="basket-cart-amount" id="cart-qty"></span>
+                    </a>
+                    <!--cart_status_135-->
+                 </div>
+              </div>
+              <div class="w3l_header_right">
+
+                <div class="dropdown profile_details_drop" style="padding-top: 14px;">
+                  <a class="dropdown-toggle pointer" data-toggle="dropdown" style="cursor: pointer; font-size: 18px;";
+                      background: padding-box;" ng-click="headerbarCtrl.init()">
+                       <i class="fa fa-user" aria-hidden="true" ng-show="!headerbarCtrl.getUserStatus"></i>
+                       <!-- <img ng-src="{{headerbarCtrl.user.img}}" ng-show="headerbarCtrl.getUserStatus" style="height: 35px; width: 40px;padding-bottom:7px" class="img-circle"> -->
+                       <img src="/assests/images/user.png" ng-show="headerbarCtrl.getUserStatus" style="height: 46px; width: 40px;padding-bottom:7px;" class="img-circle">
+                       {{headerbarCtrl.users}}
+                            <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" ng-show="!headerbarCtrl.getUserStatus">
+                    <li><a ng-click="headerbarCtrl.showLogin()"href="">Login</a></li>
+                    <li><a ng-click="headerbarCtrl.showRegister()"href="">Register</a></li>
+                  </ul>
+                  <ul class="dropdown-menu" ng-show="headerbarCtrl.getUserStatus">
+                    <li><a ng-click="headerbarCtrl.logouts()" href="">Logout</a></li>
+                    <li ng-show="headerbarCtrl.checkAdmin"><a ui-sref="admin">Admin</a></li>
+                    <li><a ui-sref="home.checkout">My Order</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+           </div>
+        </div>
+     </div>
+  </div>

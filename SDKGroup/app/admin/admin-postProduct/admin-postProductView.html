@@ -1,0 +1,78 @@
+<!-- <div class="row">
+    <div class="col-sm-2">
+        <button class="btn btn-primary" ng-json-export-excel data="$ctrl.productModels"
+        report-fields="{stt:'STT',title: 'Title', group: 'Group',
+        note: 'Note'}" filename=" 'posts-excel' "
+        separator=",">Export Excel</button>
+    </div>
+</div> -->
+<div class="row">
+    <div class="col-sm-6">
+        <div class="col-sm-3">
+            <button type="button" class="btn btn-primary" ng-click="$ctrl.addProduct()">Add Products</button>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="col-sm-6">
+        </div>
+        <div class="col-sm-3">
+            <button class="btn btn-success" ng-click="$ctrl.onExportExcel()">Export Excel</button>
+        </div>
+        <div class="col-sm-3">
+            <button class="btn btn-info" ng-click="$ctrl.onExportDoc()">Export Word</button>
+        </div>
+    </div>
+</div>
+<div>
+  <div class="panel-group">
+        <table datatable="ng" class="table table-bordered table-striped"export-table>
+            <colgroup>
+                <col width="5%" />
+                <col width="20%" />
+                <col width="20%" />
+                <col width="15%" />
+                <col width="20%" />
+                <col width="10%" />
+                <col width="10%" />
+            </colgroup>
+          <thead>
+          <tr>
+              <th>Number</th>
+              <th>Title</th>
+              <th>Picture</th>
+              <th>Group</th>
+              <th>Note</th>
+              <th>Edit</th>
+              <th>Delete</th>
+          </tr>
+          </thead>
+          <tbody>
+                <tr ng-repeat = "product in $ctrl.productModels">
+                  <td>{{$index +1}}</td>
+                  <td>{{product.title}}</td>
+                  <td><img width="120px" src="{{product.img}}" alt=""></td>
+                  <td>{{product.group}}</td>
+                  <td><p>{{product.note}}</p></td>
+                  <td><a href="" ng-click="$ctrl.onEdit(product)"><span class="fa fa-edit">
+                       <span>Edit</span></span></a>
+                  </td>
+                  <td> <a href="" ng-click="$ctrl.deleteProduct(product)">
+                      <span class="fa fa-trash-o"> <span>Delete</span></span></a>
+                  </td>
+                </tr>
+          </tbody>
+          <tfoot>
+          <tr>
+              <th>Number</th>
+              <th>Title</th>
+              <th>Picture</th>
+              <th>Group</th>
+              <th>Note</th>
+              <th>Edit</th>
+              <th>Delete</th>
+          </tr>
+          </tfoot>
+        </table>
+</div>
+
+</div>

@@ -1,0 +1,53 @@
+<div class="modal fade" ng-init="Modal.init()">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" ng-show="!Modal.productModel._id">ADD PRODUCT</h4>
+        <h4 class="modal-title" ng-show="Modal.productModel._id">EDIT PRODUCT</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Name : </label>
+          <input type="text" class="form-control" ng-model="Modal.productModel.name">
+        </div>
+        <div class="form-group">
+          <label>Category : </label>
+          <select ng-model="Modal.productModel.category_id"
+          class="form-control" ng-options="category._id as category.name for category in Modal.categories" >
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Price : </label>
+          <input class="form-control" ng-model="Modal.productModel.price">
+        </div>
+        <div class="form-group">
+          <label>Sale : </label>
+          <input class="form-control" ng-model="Modal.productModel.sale">
+        </div>
+        <div class="form-group">
+          <label>Qty : </label>
+          <input class="form-control" ng-model="Modal.productModel.qty">
+        </div>
+        <div class="form-group">
+          <label>Content : </label>
+          <textarea class="form-control" rows="4" ng-model="Modal.productModel.content"></textarea>
+        </div>
+        <div class="form-group row">
+         <div class="col-sm-6">
+             <button ngf-select ng-model="Modal.image" accept="image/*" class="btn btn-primary">Picture</button>
+         </div>
+         <div class="col-sm-6">
+             <img ng-src="{{Modal.productModel.img}}"alt="Select Picture" ng-show="!Modal.image" style="height: 100px; width: 120px" class="img-circle">
+             <img ngf-src="Modal.image" alt="Select Picture" ng-show="Modal.image" style="height: 100px; width: 120px" class="img-circle">
+         </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="button" ng-click="Modal.addProduct()" class="btn btn-primary" data-dismiss="modal" ng-disabled="!Modal.productModel.name">Save</button>
+      </div>
+    </div>
+  </div>
+</div>

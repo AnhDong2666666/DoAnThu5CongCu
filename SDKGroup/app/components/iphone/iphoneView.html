@@ -1,0 +1,85 @@
+<div class="tygh-content clearfix top-brands">
+  <div class="container content-grid">
+    <div class="row">
+      <div class="span16 home-header-banner" >
+        <div class="sidebox-wrapper-nhansam" >
+          <h3 class="sidebox-title_nhansam">
+              <span>Điện thoại iPhone</span>
+          </h3>
+          <div class="viewallcat">
+              <ul>
+                <li ng-repeat="category in categories"><a ui-sref="home.iphonecate({id: category._id})">{{category.name}}</a></li>
+              </ul>
+          </div>
+          <div class="sidebox-body_nhansam">
+              <div class="grid_product_list_column clearfix">
+                <div class="product_list_column5" ng-repeat="data in data">
+                    <div class="grid-list__item ">
+                      <div class="grid-list__image">
+                          <label class="label_installment">Trả góp 0%</label>
+                          <a href="" title="{{data.name}}"><img class="ty-pict   load_scroll  cm-image"  data-src="{{data.img}}" alt="trang-cu" title="trang-cu" src="/assests/images/empty.jpg" width="180px" height="180px"/>
+                          </a>
+                      </div>
+                      <div class="grid-list__rating no-rating">
+                      </div>
+                      <div class="grid-list__item-name">
+                          <a ui-sref="home.product({id: data._id})" class="product-title" >{{data.name}}</a>    
+                      </div>
+                      <div class="grid-list__price">
+                          <span class="cm-reload-720002336 price-update" id="price_update_720002336">
+                            <input type="hidden" name="appearance[show_price_values]" value="1" />
+                            <input type="hidden" name="appearance[show_price]" value="1" />
+                            <span class="price" id="line_discounted_price_720002336"><span id="sec_discounted_price_720002336" class="price-num">{{data.price}}000</span>&nbsp;<span class="price-num" style=" text-decoration: underline; ">đ</span></span>
+                            <!--price_update_720002336-->
+                          </span>
+                          <span class="cm-reload-720002336" id="old_price_update_720002336">
+                            <!--old_price_update_720002336-->
+                          </span>
+                          <div class="snipcart-details">
+                          <input type="button" class="btn btn-success" value="ADD TO CART" ng-click="addShop(data._id)" class="button" />
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="sidebox-wrapper-nhansam homepage-on-sale deal-cuoituan" >
+          <h3 class="sidebox-title_nhansam">
+              <span>Sản Phẩm Giá Sốc</span>
+          </h3>
+          <div class="sidebox-body_nhansam">
+              <div id="scroll_list_45" class="owl-carousel products_scroll_list">
+                <div class="scroller-list__item">
+                    <div class="grid-list__item">
+                      <div class="grid-list__image">
+                          <span class="label_cty">Công ty</span>                            <label class="label_installment">Trả góp 0%</label>
+                          <a href="/oppo-reno2-256gb" title="Oppo Reno2 (8GB | 256GB) Công Ty"><img class="ty-pict   lazyOwl   cm-image"   data-src="uploads/imgs/1582824269098_oppo.png"" alt="deb" title="deb"   src="assests/images/empty.jpg" width="180px"/></a>
+                      </div>
+                      <div class="grid-list__rating no-rating">
+                      </div>
+                      <div class="grid-list__item-name">
+                          <a href="/oppo-reno2-256gb" class="product-title" >Oppo Reno2 (8GB | 256GB) Công Ty</a>    
+                      </div>
+                      <div class="grid-list__price">
+                          <span class="cm-reload-450003012 price-update" id="price_update_450003012">
+                            <input type="hidden" name="appearance[show_price_values]" value="1" />
+                            <input type="hidden" name="appearance[show_price]" value="1" />
+                            <span class="price" id="line_discounted_price_450003012"><span id="sec_discounted_price_450003012" class="price-num">8.990.000</span>&nbsp;<span class="price-num" style=" text-decoration: underline; ">đ</span></span>
+                            <!--price_update_450003012-->
+                          </span>
+                          <span class="cm-reload-450003012" id="old_price_update_450003012">
+                            <!--old_price_update_450003012-->
+                          </span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- Inline script moved to the bottom of the page -->
+              <!-- Inline script moved to the bottom of the page -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
